@@ -144,7 +144,7 @@ function retry(func, attempts) {
         result = func();
         break;
       } catch (e) {
-        console.error(e);
+        // intentionally ignored
       }
     }
     return result;
